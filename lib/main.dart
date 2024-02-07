@@ -184,6 +184,27 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have account?",
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "Sign up",
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 253, 59, 96),
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
