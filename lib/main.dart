@@ -5,7 +5,7 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -70,6 +70,27 @@ class _MyAppState extends State<MyApp> {
                     border: UnderlineInputBorder(),
                     labelText: 'Password',
                   ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  left: 15,
+                ),
+                child: Row(
+                  children: [
+                    Checkbox(
+                      activeColor: Colors.red,
+                      value: false,
+                      onChanged: (newValue) {},
+                    ),
+                    Text(
+                      "Remember Me",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Color.fromARGB(255, 253, 59, 96),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
