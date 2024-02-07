@@ -144,6 +144,46 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Text(
+                      "Or Login with",
+                      style: TextStyle(
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(
+                  right: 90,
+                  left: 90,
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                      width: 40,
+                      child: Image.asset("Assets/Images/facebook.png"),
+                    ),
+                    SizedBox(
+                      width: 40,
+                      child: Image.asset("Assets/Images/instagram.png"),
+                    ),
+                    SizedBox(
+                      width: 40,
+                      child: Image.asset("Assets/Images/linkedin.png"),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
