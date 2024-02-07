@@ -25,7 +25,7 @@ class _MyAppState extends State<MyApp> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 50),
+                    padding: const EdgeInsets.only(top: 40),
                     child: Image.asset("Assets/Images/Logo.png"),
                   ),
                 ],
@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 30,
-                      top: 100,
+                      top: 60,
                     ),
                     child: Text(
                       "Welcome back",
@@ -71,6 +71,9 @@ class _MyAppState extends State<MyApp> {
                     labelText: 'Password',
                   ),
                 ),
+              ),
+              SizedBox(
+                height: 15,
               ),
               Padding(
                 padding: const EdgeInsets.only(
@@ -112,8 +115,34 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 30,
+              ),
               Row(
-                children: [],
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 253, 59, 96),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        left: 130,
+                        right: 130,
+                        top: 10,
+                        bottom: 10,
+                      ),
+                      child: Text(
+                        "Login",
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
