@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 30,
-                      top: 60,
+                      top: 100,
                     ),
                     child: Text(
                       "Welcome back",
@@ -48,6 +48,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 10,
+              ),
               Padding(
                 padding: const EdgeInsets.only(
                   left: 30,
@@ -57,6 +60,7 @@ class _MyAppState extends State<MyApp> {
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(),
                     labelText: 'Email/Phone Number',
+                    prefixIcon: Icon(Icons.email),
                   ),
                 ),
               ),
@@ -69,15 +73,16 @@ class _MyAppState extends State<MyApp> {
                   decoration: InputDecoration(
                     border: UnderlineInputBorder(),
                     labelText: 'Password',
+                    prefixIcon: Icon(Icons.lock),
                   ),
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  left: 15,
+                  left: 23,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,9 +93,11 @@ class _MyAppState extends State<MyApp> {
                           activeColor: Colors.red,
                           value: false,
                           onChanged: (newValue) {},
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(7)),
                         ),
                         Text(
-                          "Remember Me",
+                          "Remember me",
                           style: TextStyle(
                             fontSize: 15,
                             color: Color.fromARGB(255, 253, 59, 96),
@@ -100,7 +107,7 @@ class _MyAppState extends State<MyApp> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
-                        right: 18,
+                        right: 20,
                       ),
                       child: TextButton(
                         onPressed: () {},
@@ -116,7 +123,7 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               SizedBox(
-                height: 30,
+                height: 80,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -144,6 +151,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
+              SizedBox(
+                height: 20,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -169,20 +179,32 @@ class _MyAppState extends State<MyApp> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    SizedBox(
-                      width: 40,
-                      child: Image.asset("Assets/Images/facebook.png"),
+                    TextButton(
+                      onPressed: () {},
+                      child: SizedBox(
+                        width: 40,
+                        child: Image.asset("Assets/Images/facebook.png"),
+                      ),
                     ),
-                    SizedBox(
-                      width: 40,
-                      child: Image.asset("Assets/Images/instagram.png"),
+                    TextButton(
+                      onPressed: () {},
+                      child: SizedBox(
+                        width: 40,
+                        child: Image.asset("Assets/Images/instagram.png"),
+                      ),
                     ),
-                    SizedBox(
-                      width: 40,
-                      child: Image.asset("Assets/Images/linkedin.png"),
+                    TextButton(
+                      onPressed: () {},
+                      child: SizedBox(
+                        width: 40,
+                        child: Image.asset("Assets/Images/linkedin.png"),
+                      ),
                     ),
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
