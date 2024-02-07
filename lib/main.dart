@@ -77,21 +77,43 @@ class _MyAppState extends State<MyApp> {
                   left: 15,
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Checkbox(
-                      activeColor: Colors.red,
-                      value: false,
-                      onChanged: (newValue) {},
+                    Row(
+                      children: [
+                        Checkbox(
+                          activeColor: Colors.red,
+                          value: false,
+                          onChanged: (newValue) {},
+                        ),
+                        Text(
+                          "Remember Me",
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 253, 59, 96),
+                          ),
+                        ),
+                      ],
                     ),
-                    Text(
-                      "Remember Me",
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Color.fromARGB(255, 253, 59, 96),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        right: 18,
                       ),
-                    ),
+                      child: TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Forget Password?",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 253, 59, 96),
+                          ),
+                        ),
+                      ),
+                    )
                   ],
                 ),
+              ),
+              Row(
+                children: [],
               ),
             ],
           ),
