@@ -30,10 +30,10 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
+                    padding: EdgeInsets.only(
                       left: 30,
                       top: 100,
                     ),
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
                   right: 30,
                 ),
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: UnderlineInputBorder(),
                     labelText: 'Email/Phone Number',
                     prefixIcon: Icon(Icons.email),
@@ -70,19 +70,19 @@ class _MyAppState extends State<MyApp> {
                   right: 30,
                 ),
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: UnderlineInputBorder(),
                     labelText: 'Password',
                     prefixIcon: Icon(Icons.lock),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  left: 23,
+                  left: 24,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -90,13 +90,18 @@ class _MyAppState extends State<MyApp> {
                     Row(
                       children: [
                         Checkbox(
-                          activeColor: Colors.red,
+                          side: MaterialStateBorderSide.resolveWith(
+                            (states) => const BorderSide(
+                              width: 1.0,
+                              color: Color.fromARGB(255, 253, 59, 96),
+                            ),
+                          ),
                           value: false,
                           onChanged: (newValue) {},
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(7)),
                         ),
-                        Text(
+                        const Text(
                           "Remember me",
                           style: TextStyle(
                             fontSize: 15,
@@ -111,7 +116,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                       child: TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           "Forget Password?",
                           style: TextStyle(
                             color: Color.fromARGB(255, 253, 59, 96),
@@ -122,7 +127,7 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 80,
               ),
               Row(
@@ -131,10 +136,10 @@ class _MyAppState extends State<MyApp> {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Color.fromARGB(255, 253, 59, 96),
+                      backgroundColor: const Color.fromARGB(255, 253, 59, 96),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(
+                    child: const Padding(
+                      padding: EdgeInsets.only(
                         left: 130,
                         right: 130,
                         top: 10,
@@ -151,14 +156,14 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 20),
+                    padding: EdgeInsets.only(top: 20),
                     child: Text(
                       "Or Login with",
                       style: TextStyle(
@@ -168,7 +173,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Padding(
@@ -203,13 +208,13 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Don't have account?",
                     style: TextStyle(
                       fontSize: 16,
@@ -217,7 +222,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       "Sign up",
                       style: TextStyle(
                         color: Color.fromARGB(255, 253, 59, 96),
